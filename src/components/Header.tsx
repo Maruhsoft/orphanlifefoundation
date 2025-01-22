@@ -121,8 +121,7 @@ const Header = () => {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link to="/" className="flex-shrink-0 flex items-center">
-              <Heart className="h-8 w-8 text-orange-500" aria-hidden="true" />
-              <span className="ml-2 text-xl font-bold">OrphanCare</span>
+              <img src="../assets/orphanlifefoundationlogo.png" alt="Orphan Life Foundation" className="h-8 w-8"/>
             </Link>
           </div>
 
