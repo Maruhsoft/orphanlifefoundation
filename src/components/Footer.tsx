@@ -42,7 +42,7 @@ const Footer = () => {
           <div className="space-y-8 xl:col-span-1">
             <div className="flex items-center space-x-2">
               <Heart className="h-8 w-8 text-orange-500" />
-              <span className="text-white text-xl font-bold">OrphanCare</span>
+              <span className="text-white text-xl font-bold">Orphan Life Foundation</span>
             </div>
             <p className="text-gray-400 text-base">
               Making a difference in the lives of orphaned children around the world.
@@ -86,9 +86,13 @@ const Footer = () => {
                 <ul className="mt-4 space-y-4">
                   <li>
                     <p className="text-base text-gray-300">
-                      123 Hope Street
+                      8 The Green
                       <br />
-                      New York, NY 10001
+                      Suite # 7165
+                      <br />
+                      Dover, DE 1990107950
+                      <br />
+                      Charity Number: 81-4314076
                     </p>
                   </li>
                   <li>
@@ -101,10 +105,10 @@ const Footer = () => {
                   </li>
                   <li>
                     <a
-                      href="mailto:info@orphancare.org"
+                      href="mailto:info@orphanlifefoundation.com"
                       className="text-base text-gray-300 hover:text-orange-500"
                     >
-                      info@orphancare.org
+                      info@orphanlifefoundation.com
                     </a>
                   </li>
                 </ul>
@@ -114,7 +118,7 @@ const Footer = () => {
         </div>
         <div className="mt-12 border-t border-gray-700 pt-8">
           <p className="text-base text-gray-400 xl:text-center">
-            &copy; {new Date().getFullYear()} OrphanCare. All rights reserved.
+            &copy; {new Date().getFullYear()} Orphan Life Foundation. All rights reserved.
           </p>
         </div>
       </div>
