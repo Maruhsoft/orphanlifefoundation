@@ -132,7 +132,6 @@ const Header = () => {
     <div key={item.name} className="relative group">
       <button
         onClick={() => handleNavigation(item.href, true)}
-        onKeyDown={(e) => handleKeyDown(e, item.href, true)}
         className={`px-3 py-2 text-sm font-medium text-white hover:text-orange-500 flex items-center ${
           location.pathname === item.href ? 'text-orange-500' : ''
         }`}
@@ -143,13 +142,12 @@ const Header = () => {
         )}
       </button>
       {item.submenu && (
-        <div className="absolute left-0 mt-2 w-48 hidden group-hover:block shadow-lg bg-black bg-opacity-50 ring-1 ring-black ring-opacity-5">
+        <div className="absolute left-0 mt-2 w-48 hidden group-hover:block hover:block shadow-lg bg-black bg-opacity-50 ring-1 ring-black ring-opacity-5">
           <div className="py-1" role="menu">
             {item.submenu.map((subitem) => (
               <button
                 key={subitem.name}
                 onClick={() => handleNavigation(subitem.href)}
-                onKeyDown={(e) => handleKeyDown(e, subitem.href)}
                 className={`block w-full text-left px-4 py-2 text-sm text-white hover:bg-gray-700`}
                 role="menuitem"
               >
@@ -161,7 +159,6 @@ const Header = () => {
       )}
     </div>
   ))}
-
             <button 
               onClick={() => (window.location.href = 'https://example.com')}
               className="ml-4 px-4 py-2 text-sm font-medium text-white bg-orange-500 hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500"
