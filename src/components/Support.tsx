@@ -20,7 +20,7 @@ const Support = () => {
               <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8">
                 <div className="-mt-6">
                   <div>
-                    <span className="inline-flex items-center justify-center p-3 bg-orange-500 rounded-md shadow-lg">
+                    <span className="inline-flex items-center justify-center p-3 bg-orange-500 shadow-lg">
                       <Heart className="h-6 w-6 text-white" />
                     </span>
                   </div>
@@ -48,7 +48,7 @@ const Support = () => {
               <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8">
                 <div className="-mt-6">
                   <div>
-                    <span className="inline-flex items-center justify-center p-3 bg-orange-500 rounded-md shadow-lg">
+                    <span className="inline-flex items-center justify-center p-3 bg-orange-500 shadow-lg">
                       <DollarSign className="h-6 w-6 text-white" />
                     </span>
                   </div>
@@ -75,7 +75,7 @@ const Support = () => {
               <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8">
                 <div className="-mt-6">
                   <div>
-                    <span className="inline-flex items-center justify-center p-3 bg-orange-500 rounded-md shadow-lg">
+                    <span className="inline-flex items-center justify-center p-3 bg-orange-500 shadow-lg">
                       <Users className="h-6 w-6 text-white" />
                     </span>
                   </div>
