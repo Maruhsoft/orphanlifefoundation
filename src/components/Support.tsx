@@ -32,9 +32,13 @@ const Support = () => {
                     orphaned children.
                   </p>
                   <div className="mt-6">
-                    <button className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-orange-500 hover:bg-orange-600">
+                    <button
+                      onClick={() => (window.location.href = 'https://example.com')}
+                      className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium shadow-sm text-white bg-orange-500 hover:bg-orange-600"
+                      >
                       Donate Now
                     </button>
+
                   </div>
                 </div>
               </div>
@@ -56,9 +60,12 @@ const Support = () => {
                     in need.
                   </p>
                   <div className="mt-6">
-                    <button className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-orange-500 hover:bg-orange-600">
+                    <button
+                      className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium shadow-sm text-white bg-orange-500 hover:bg-orange-600"
+                      >
                       Join Monthly
                     </button>
+
                   </div>
                 </div>
               </div>
@@ -80,9 +87,12 @@ const Support = () => {
                     lives.
                   </p>
                   <div className="mt-6">
-                    <button className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-orange-500 hover:bg-orange-600">
+                    <button
+                      className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium shadow-sm text-white bg-orange-500 hover:bg-orange-600"
+                      >
                       Get Involved
                     </button>
+
                   </div>
                 </div>
               </div>
