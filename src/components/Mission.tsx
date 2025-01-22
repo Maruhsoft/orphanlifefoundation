@@ -17,7 +17,7 @@ const Mission = () => {
             <div className="mt-8">
               <div className="flex items-center">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-orange-500 text-white">
+                  <div className="flex items-center justify-center h-12 w-12 bg-orange-500 text-white">
                     <svg
                       className="h-6 w-6"
                       fill="none"
