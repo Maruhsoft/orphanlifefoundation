@@ -21,10 +21,15 @@ const Hero = () => {
           in the lives of orphaned children around the world.
         </p>
         <div className="mt-10 flex space-x-4">
-          <button className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-orange-500 hover:bg-orange-600">
+          <button
+            onClick={() => (window.location.href = 'https://example.com')}
+            className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium text-white bg-orange-500 hover:bg-orange-600"
+            >
             Donate Now
           </button>
-          <button className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-orange-500 bg-white hover:bg-gray-50">
+          <button
+            className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium text-orange-500 bg-white hover:bg-gray-50"
+            >
             Learn More
           </button>
         </div>
