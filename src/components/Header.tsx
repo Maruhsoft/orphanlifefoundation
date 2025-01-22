@@ -132,7 +132,7 @@ const Header = () => {
                 <button
                   onClick={() => handleNavigation(item.href, true)}
                   onKeyDown={(e) => handleKeyDown(e, item.href, true)}
-                  className={`px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-orange-500 hover:bg-gray-50 flex items-center ${
+                  className={`px-3 py-2 text-sm font-medium text-gray-700 hover:text-orange-500 hover:bg-gray-50 flex items-center ${
                     location.pathname === item.href ? 'text-orange-500' : ''
                   }`}
                   aria-expanded={activeDropdown === item.name}
@@ -146,7 +146,7 @@ const Header = () => {
                   )}
                 </button>
                 {item.submenu && activeDropdown === item.name && (
-                  <div className="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+                  <div className="absolute left-0 mt-2 w-48 shadow-lg bg-white ring-1 ring-black ring-opacity-5">
                     <div className="py-1" role="menu">
                       {item.submenu.map((subitem) => (
                         <button
@@ -180,7 +180,7 @@ const Header = () => {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-orange-500"
+              className="inline-flex items-center justify-center p-2 text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-orange-500"
               aria-expanded={isOpen}
             >
               <span className="sr-only">{isOpen ? 'Close menu' : 'Open menu'}</span>
@@ -197,7 +197,7 @@ const Header = () => {
                 <div key={item.name}>
                   <button
                     onClick={() => handleNavigation(item.href, true)}
-                    className={`w-full text-left px-3 py-2 rounded-md text-base font-medium ${
+                    className={`w-full text-left px-3 py-2 text-base font-medium ${
                       location.pathname === item.href
                         ? 'text-orange-500 bg-gray-50'
                         : 'text-gray-700 hover:text-orange-500 hover:bg-gray-50'
@@ -211,7 +211,7 @@ const Header = () => {
                         <button
                           key={subitem.name}
                           onClick={() => handleNavigation(subitem.href)}
-                          className={`w-full text-left px-3 py-2 rounded-md text-sm font-medium ${
+                          className={`w-full text-left px-3 py-2 text-sm font-medium ${
                             location.pathname === subitem.href
                               ? 'text-orange-500 bg-gray-50'
                               : 'text-gray-500 hover:text-orange-500 hover:bg-gray-50'
@@ -226,7 +226,7 @@ const Header = () => {
               ))}
               <button
                 onClick={() => navigate('/donate')}
-                className="w-full mt-4 px-4 py-2 rounded-md text-sm font-medium text-white bg-orange-500 hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500"
+                className="w-full mt-4 px-4 py-2 text-sm font-medium text-white bg-orange-500 hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500"
               >
                 Donate Now
               </button>
