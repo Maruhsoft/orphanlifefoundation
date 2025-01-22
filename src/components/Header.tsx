@@ -172,7 +172,7 @@ const Header = () => {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 text-white hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-orange-500"
+              className="inline-flex items-center justify-center p-2 text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-orange-500"
               aria-expanded={isOpen}
             >
               <span className="sr-only">{isOpen ? 'Close menu' : 'Open menu'}</span>
@@ -229,5 +229,5 @@ const Header = () => {
     </header>
   );
 };
-
+          
 export default Header;
