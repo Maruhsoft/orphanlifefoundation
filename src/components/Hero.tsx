@@ -1,5 +1,5 @@
 import React from 'react';
-import DonateButton from '../components/DonateButton';
+import DonateButton from 'DonateButton';
 
 const Hero = () => {
   return (
