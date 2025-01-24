@@ -44,9 +44,9 @@ const ImpactStats = () => {
           {stats.map((item) => (
             <div
               key={item.id}
-              className="relative bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+              className="relative bg-white p-6 shadow-lg hover:shadow-xl transition-shadow duration-300"
             >
-              <div className="absolute top-0 right-0 -mt-4 mr-4 w-12 h-12 rounded-full bg-orange-100 flex items-center justify-center">
+              <div className="absolute top-0 right-0 -mt-4 mr-4 w-12 h-12 bg-orange-100 flex items-center justify-center">
                 <item.icon className="h-6 w-6 text-orange-500" />
               </div>
               <dt>
