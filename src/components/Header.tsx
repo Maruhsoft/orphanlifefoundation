@@ -132,21 +132,25 @@ const Header = () => {
             {navigation.map((item) => (
               <div key={item.name} className="relative">
                 <button
-                  onClick={() => handleNavigation(item.href, true)}
-                  onKeyDown={(e) => handleKeyDown(e, item.href, true)}
-                  className={`px-3 py-2 text-sm font-medium text-white hover:text-orange-500 hover:bg-gray-50 flex items-center ${
-                    location.pathname === item.href ? 'text-orange-500' : ''
-                  }`}
-                  aria-expanded={activeDropdown === item.name}
-                  aria-haspopup={!!item.submenu}
-                >
-                  {item.name}
-                  {item.submenu && (
-                    <ChevronDown className={`ml-1 h-4 w-4 transition-transform ${
-                      activeDropdown === item.name ? 'rotate-180' : ''
-                    }`} />
-                  )}
-                </button>
+  onMouseEnter={() => setActiveDropdown(item.name)} // Show dropdown on hover
+  onMouseLeave={() => setActiveDropdown(null)} // Hide dropdown when pointer leaves
+  onClick={() => handleNavigation(item.href, true)}
+  onKeyDown={(e) => handleKeyDown(e, item.href, true)}
+  className={`px-3 py-2 text-sm font-medium text-white hover:text-orange-500 bg-black bg-opacity-50 hover:bg-opacity-70 flex items-center ${
+    location.pathname === item.href ? 'text-orange-500' : ''
+  }`}
+  aria-expanded={activeDropdown === item.name}
+  aria-haspopup={!!item.submenu}
+>
+  {item.name}
+  {item.submenu && (
+    <ChevronDown
+      className={`ml-1 h-4 w-4 transition-transform ${
+        activeDropdown === item.name ? 'rotate-180' : ''
+      }`}
+    />
+  )}
+</button>
                 {item.submenu && activeDropdown === item.name && (
                   <div className="absolute left-0 mt-2 w-48 shadow-lg bg-white ring-1 ring-black ring-opacity-5">
                     <div className="py-1" role="menu">
