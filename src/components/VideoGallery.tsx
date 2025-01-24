@@ -45,7 +45,7 @@ const VideoGallery = () => {
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-30 transition-opacity duration-300"></div>
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <button className="bg-white bg-opacity-0 p-4 transform transition-transform duration-300 group-hover:scale-110">
+                  <button className="bg-white bg-opacity-50 p-4 rounded-full transform transition-transform duration-300 group-hover:scale-110">
                     <Play className="h-6 w-6 text-orange-500" />
                   </button>
                 </div>
