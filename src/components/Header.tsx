@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useNavigate, useLocation, Link } from 'react-router-dom';
 import { Menu, X, Heart, ChevronDown } from 'lucide-react';
+import DonateButton from './components/DonateButton';
 
 interface NavItem {
   name: string;
