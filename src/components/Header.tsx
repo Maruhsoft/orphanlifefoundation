@@ -12,6 +12,7 @@ interface NavItem {
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const [activeMobileMenu, setActiveMobileMenu] = useState<string | null>(null); // Mobile submenu state
   const dropdownRef = useRef<HTMLDivElement>(null);
   const navigate = useNavigate();
   const location = useLocation();
@@ -75,6 +76,11 @@ const Header = () => {
       ],
     },
   ];
+
+  useEffect(() => {
+  setIsOpen(false); // Close mobile menu
+  setActiveMobileMenu(null); // Reset active mobile submenu
+}, [location]);
 
   // Close dropdown when clicking outside
   useEffect(() => {
@@ -199,32 +205,43 @@ const Header = () => {
               {navigation.map((item) => (
                 <div key={item.name}>
                   <button
-                    onClick={() => handleNavigation(item.href, true)}
-                    className={`w-full text-left px-3 py-2 text-base font-medium ${
-                      location.pathname === item.href
-                        ? 'text-orange-500 bg-gray-50'
-                        : 'text-gray-700 hover:text-orange-500 hover:bg-gray-50'
-                    }`}
-                  >
-                    {item.name}
-                  </button>
-                  {item.submenu && (
-                    <div className="pl-4">
-                      {item.submenu.map((subitem) => (
-                        <button
-                          key={subitem.name}
-                          onClick={() => handleNavigation(subitem.href)}
-                          className={`w-full text-left px-3 py-2 text-sm font-medium ${
-                            location.pathname === subitem.href
-                              ? 'text-orange-500 bg-gray-50'
-                              : 'text-gray-500 hover:text-orange-500 hover:bg-gray-50'
-                          }`}
-                        >
-                          {subitem.name}
-                        </button>
-                      ))}
-                    </div>
-                  )}
+  onClick={() =>
+    item.submenu
+      ? setActiveMobileMenu(activeMobileMenu === item.name ? null : item.name)
+      : handleNavigation(item.href)
+  }
+  className={`w-full text-left px-3 py-2 text-base font-medium ${
+    location.pathname === item.href
+      ? 'text-orange-500 bg-gray-50'
+      : 'text-gray-700 hover:text-orange-500 hover:bg-gray-50'
+  }`}
+>
+  {item.name}
+  {item.submenu && (
+    <ChevronDown
+      className={`ml-2 h-4 w-4 transition-transform ${
+        activeMobileMenu === item.name ? 'rotate-180' : ''
+      }`}
+    />
+  )}
+</button>
+                  {item.submenu && activeMobileMenu === item.name && (
+  <div className="pl-4">
+    {item.submenu.map((subitem) => (
+      <button
+        key={subitem.name}
+        onClick={() => handleNavigation(subitem.href)}
+        className={`w-full text-left px-3 py-2 text-sm font-medium ${
+          location.pathname === subitem.href
+            ? 'text-orange-500 bg-gray-50'
+            : 'text-gray-500 hover:text-orange-500 hover:bg-gray-50'
+        }`}
+      >
+        {subitem.name}
+      </button>
+    ))}
+  </div>
+)}
                 </div>
               ))}
               <DonateButton />
