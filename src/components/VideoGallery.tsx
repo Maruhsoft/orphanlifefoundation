@@ -37,7 +37,7 @@ const VideoGallery = () => {
         <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {videos.map((video) => (
             <div key={video.id} className="relative group">
-              <div className="relative w-full h-64 rounded-lg overflow-hidden">
+              <div className="relative w-full h-64 overflow-hidden">
                 <img
                   src={video.thumbnail}
                   alt={video.title}
@@ -45,7 +45,7 @@ const VideoGallery = () => {
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-30 transition-opacity duration-300"></div>
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <button className="bg-white bg-opacity-90 rounded-full p-4 transform transition-transform duration-300 group-hover:scale-110">
+                  <button className="bg-white bg-opacity-90 p-4 transform transition-transform duration-300 group-hover:scale-110">
                     <Play className="h-6 w-6 text-orange-500" />
                   </button>
                 </div>
