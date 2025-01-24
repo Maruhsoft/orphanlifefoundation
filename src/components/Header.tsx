@@ -128,39 +128,53 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex md:items-center md:space-x-4">
-  {navigation.map((item) => (
-    <div key={item.name} className="relative group">
-      <button
-        onClick={() => handleNavigation(item.href, true)}
-        className={`px-3 py-2 text-sm font-medium text-white hover:text-orange-500 flex items-center ${
-          location.pathname === item.href ? 'text-orange-500' : ''
-        }`}
-      >
-        {item.name}
-        {item.submenu && (
-          <ChevronDown className="ml-1 h-4 w-4" />
-        )}
-      </button>
-      {item.submenu && (
-        <div className="absolute left-0 mt-2 w-48 hidden group-hover:block hover:block shadow-lg bg-black bg-opacity-50 ring-1 ring-black ring-opacity-5">
-          <div className="py-1" role="menu">
-            {item.submenu.map((subitem) => (
-              <button
-                key={subitem.name}
-                onClick={() => handleNavigation(subitem.href)}
-                className={`block w-full text-left px-4 py-2 text-sm text-white hover:bg-gray-700`}
-                role="menuitem"
-              >
-                {subitem.name}
-              </button>
+            {navigation.map((item) => (
+              <div key={item.name} className="relative">
+                <button
+                  onClick={() => handleNavigation(item.href, true)}
+                  onKeyDown={(e) => handleKeyDown(e, item.href, true)}
+                  className={`px-3 py-2 text-sm font-medium text-white hover:text-orange-500 hover:bg-gray-50 flex items-center ${
+                    location.pathname === item.href ? 'text-orange-500' : ''
+                  }`}
+                  aria-expanded={activeDropdown === item.name}
+                  aria-haspopup={!!item.submenu}
+                >
+                  {item.name}
+                  {item.submenu && (
+                    <ChevronDown className={`ml-1 h-4 w-4 transition-transform ${
+                      activeDropdown === item.name ? 'rotate-180' : ''
+                    }`} />
+                  )}
+                </button>
+                {item.submenu && activeDropdown === item.name && (
+                  <div className="absolute left-0 mt-2 w-48 shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+                    <div className="py-1" role="menu">
+                      {item.submenu.map((subitem) => (
+                        <button
+                          key={subitem.name}
+                          onClick={() => handleNavigation(subitem.href)}
+                          onKeyDown={(e) => handleKeyDown(e, subitem.href)}
+                          className={`block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 ${
+                            location.pathname === subitem.href ? 'bg-gray-100' : ''
+                          }`}
+                          role="menuitem"
+                        >
+                          {subitem.name}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
             ))}
-          </div>
-        </div>
-      )}
-    </div>
-  ))}
-            
-<DonateButton />
+
+            <button
+                onClick={() => {
+                  alert("To make a donation to Orphan Life Foundation, kindly reach out to our customer service representatives. They will guide you through completing the process seamlessly!");
+                }}
+                className="ml-4 px-4 py-2 text-sm font-medium text-white bg-orange-500 hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500 rounded">
+                Donate Now
+              </button>
 
           </div>
 
@@ -168,7 +182,7 @@ const Header = () => {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-orange-500"
+              className="inline-flex items-center justify-center p-2 text-white hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-orange-500"
               aria-expanded={isOpen}
             >
               <span className="sr-only">{isOpen ? 'Close menu' : 'Open menu'}</span>
@@ -212,17 +226,13 @@ const Header = () => {
                   )}
                 </div>
               ))}
-              <button 
-              onClick={() => {
-                alert("To make a donation to Orphan Life Foundation, kindly
-              reach out to our customer service representatives. They will guide
-              you through completing the process seamlessly!");
-              }}
-              className="ml-4 px-4 py-2 text-sm font-medium text-white bg-orange-500 hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500"
-              >
-              Donate Now
-            </button>
-
+              <button
+                onClick={() => {
+                  alert("To make a donation to Orphan Life Foundation, kindly reach out to our customer service representatives. They will guide you through completing the process seamlessly!");
+                }}
+                className="ml-4 px-4 py-2 text-sm font-medium text-white bg-orange-500 hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500 rounded">
+                Donate Now
+              </button>
             </div>
           </div>
         )}
@@ -230,5 +240,5 @@ const Header = () => {
     </header>
   );
 };
-          
+
 export default Header;
