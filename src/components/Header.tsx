@@ -136,7 +136,7 @@ const Header = () => {
   onMouseLeave={() => setActiveDropdown(null)} // Hide dropdown when pointer leaves
   onClick={() => handleNavigation(item.href, true)}
   onKeyDown={(e) => handleKeyDown(e, item.href, true)}
-  className={`px-3 py-2 text-sm font-medium text-white hover:text-orange-500 bg-black bg-opacity-50 hover:bg-opacity-70 flex items-center ${
+  className={`px-3 py-2 text-sm font-medium text-white hover:text-orange-500 bg-opacity-50 hover:bg-opacity-70 flex items-center ${
     location.pathname === item.href ? 'text-orange-500' : ''
   }`}
   aria-expanded={activeDropdown === item.name}
