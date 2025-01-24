@@ -48,8 +48,8 @@ const Mission = () => {
             <div className="aspect-w-16 aspect-h-9">
               <img
                 className="rounded-lg shadow-lg object-cover"
-                src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-1.2.1&auto=format&fit=crop&w=2850&q=80"
-                alt="Children smiling"
+                src="https://unsplash.com/photos/boy-and-girl-eating-on-table-YiA4wqVpLQQ"
+                alt="Children Eating"
               />
             </div>
           </div>
