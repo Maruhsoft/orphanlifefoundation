@@ -1,5 +1,6 @@
 import React from 'react';
 import { Heart, DollarSign, Users } from 'lucide-react';
+import DonateButton from './DonateButton';
 
 const Support = () => {
   return (
@@ -32,13 +33,7 @@ const Support = () => {
                     orphaned children.
                   </p>
                   <div className="mt-6">
-                    <button
-                      onClick={() => (window.location.href = 'https://example.com')}
-                      className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium shadow-sm text-white bg-orange-500 hover:bg-orange-600"
-                      >
-                      Donate Now
-                    </button>
-
+                    <DonateButton />
                   </div>
                 </div>
               </div>
