@@ -45,7 +45,20 @@
   </head>
   <body>
     <div id="root"></div>
+    <a href="#" id="back-to-top" class="back-to-top fa fa-arrow-up show-back-to-top"></a>
     <script type="module" src="/src/main.tsx"></script>
+<script>
+/*--window Scroll functions--*/
+$(window).on('scroll', function () {
+	/*--show and hide scroll to top --*/
+	var ScrollTop = $('#back-to-top');
+	if ($(window).scrollTop() > 500) {
+		ScrollTop.fadeIn(1000);
+	} else {
+		ScrollTop.fadeOut(1000);
+	}
+});
+</script>
     <!-- Smartsupp Live Chat script -->
 <script type="text/javascript">
 var _smartsupp = _smartsupp || {};
