@@ -172,7 +172,7 @@ const Header = () => {
                 onClick={() => {
                   alert("To make a donation to Orphan Life Foundation, kindly reach out to our customer service representatives. They will guide you through completing the process seamlessly!");
                 }}
-                className="ml-4 px-4 py-2 text-sm font-medium text-white bg-orange-500 hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500 rounded">
+                className="ml-4 px-4 py-2 text-sm font-medium text-white bg-orange-500 hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500">
                 Donate Now
               </button>
 
@@ -230,7 +230,7 @@ const Header = () => {
                 onClick={() => {
                   alert("To make a donation to Orphan Life Foundation, kindly reach out to our customer service representatives. They will guide you through completing the process seamlessly!");
                 }}
-                className="ml-4 px-4 py-2 text-sm font-medium text-white bg-orange-500 hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500 rounded">
+                className="ml-4 px-4 py-2 text-sm font-medium text-white bg-orange-500 hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500">
                 Donate Now
               </button>
             </div>
