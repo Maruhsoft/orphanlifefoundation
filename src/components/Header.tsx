@@ -117,7 +117,10 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-black bg-opacity-50 shadow-md fixed w-full top-0 z-50">
+    <header className={`${
+    isOpen ? 'bg-white shadow-md' : 'bg-black bg-opacity-50'
+  } md:bg-black md:bg-opacity-50 md:shadow-none fixed w-full top-0 z-50`}
+>
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8" ref={dropdownRef}>
         <div className="flex justify-between h-16">
           <div className="flex items-center">
