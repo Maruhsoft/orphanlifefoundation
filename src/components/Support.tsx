@@ -3,8 +3,6 @@ import { Heart, DollarSign, Users } from 'lucide-react';
 import DonateButton from './DonateButton';
 
 const Support = () => {
-  const [showModal, setShowModal] = useState(false);
-  
   return (
     <div className="bg-white py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -57,7 +55,6 @@ const Support = () => {
                     in need.
                   </p>
                   <div className="mt-6">
-                    <DonateButton showModal={showModal} setShowModal={setShowModal} />
                     <button onClick={() => setShowModal(true)}
                       className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium shadow-sm text-white bg-orange-500 hover:bg-orange-600"
                       >
@@ -85,7 +82,6 @@ const Support = () => {
                     lives.
                   </p>
                   <div className="mt-6">
-                    <DonateButton showModal={showModal} setShowModal={setShowModal} />
                     <button onClick={() => setShowModal(true)}
                       className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium shadow-sm text-white bg-orange-500 hover:bg-orange-600"
                       >
