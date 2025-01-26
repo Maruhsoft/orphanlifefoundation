@@ -31,7 +31,7 @@ const JoinMonthly = () => {
                 </svg>
               </div>
               <h3 className="text-lg font-medium text-gray-900">
-                Volunteering Assistance
+                Monthly Giving Assistance
               </h3>
             </div>
             <p className="mt-4 text-sm text-gray-700">
