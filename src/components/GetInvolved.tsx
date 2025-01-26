@@ -5,11 +5,10 @@ const GetInvolved = () => {
 
   return (
     <>
-      <button
-        onClick={() => setShowModal(true)}
-        className="ml-4 px-4 py-2 text-sm font-medium text-white bg-orange-500 hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500"
-      >
-        Donate Now
+      <button onClick={() => setShowModal(true)}
+        className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium shadow-sm text-white bg-orange-500 hover:bg-orange-600"
+        >
+        Get Involved
       </button>
 
       {/* Modal */}
