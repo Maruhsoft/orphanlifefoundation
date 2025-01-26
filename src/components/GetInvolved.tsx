@@ -35,9 +35,7 @@ const GetInvolved = () => {
               </h3>
             </div>
             <p className="mt-4 text-sm text-gray-700">
-              To make a donation to Orphan Life Foundation, kindly
-              reach out to our customer service representative using the Live Chat. They will guide
-              you through completing the process seamlessly!
+              Get involved and be part of the change! Join hands with Orphan Life Foundation to support our mission of making a positive impact. Reach out to our customer service representative via Live Chat to explore how you can contribute to our cause!
             </p>
             <div className="mt-6 flex justify-end">
               <button
