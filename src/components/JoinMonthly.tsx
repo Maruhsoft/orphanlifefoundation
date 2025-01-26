@@ -31,13 +31,11 @@ const JoinMonthly = () => {
                 </svg>
               </div>
               <h3 className="text-lg font-medium text-gray-900">
-                Donation Assistance
+                Volunteering Assistance
               </h3>
             </div>
             <p className="mt-4 text-sm text-gray-700">
-              To make a donation to Orphan Life Foundation, kindly
-              reach out to our customer service representative using the Live Chat. They will guide
-              you through completing the process seamlessly!
+              Make a lasting impact! Join our monthly giving program and help Orphan Life Foundation sustain its efforts in transforming lives. Connect with our customer service representative through Live Chat for seamless setup of your monthly contributions.
             </p>
             <div className="mt-6 flex justify-end">
               <button
