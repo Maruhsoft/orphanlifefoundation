@@ -57,12 +57,6 @@ const Support = () => {
                   </p>
                   <div className="mt-6">
                     <JoinMonthly />
-                    <button onClick={() => setShowModal(true)}
-                      className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium shadow-sm text-white bg-orange-500 hover:bg-orange-600"
-                      >
-                      Join Monthly
-                    </button>
-
                   </div>
                 </div>
               </div>
