@@ -18,8 +18,7 @@ const Hero = () => {
           <span className="block text-orange-500">This Will Change Everything.</span>
         </h1>
         <p className="mt-6 text-xl text-gray-300 max-w-3xl">
-          Every child deserves a chance at a better future. Together, we can make a difference
-          in the lives of orphaned children around the world.
+          Change Yours. This Will Change Everything.
         </p>
         <div className="mt-10 flex space-x-4">
           <DonateButton />
