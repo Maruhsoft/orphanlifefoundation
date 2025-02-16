@@ -28,7 +28,7 @@ const Videos = () => {
       
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
         {videos.map((video, index) => (
-          <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
+          <div key={index} className="bg-white  shadow-md overflow-hidden">
             <div className="relative">
               <img
                 src={video.thumbnail}
@@ -50,10 +50,10 @@ const Videos = () => {
         ))}
       </div>
 
-      <div className="bg-gray-50 p-8 rounded-lg">
+      <div className="bg-gray-50 p-8 ">
         <h2 className="text-2xl font-semibold text-gray-900 mb-6">Featured Video</h2>
         <div className="aspect-w-16 aspect-h-9 mb-6">
-          <div className="w-full h-[400px] bg-gray-200 rounded-lg flex items-center justify-center">
+          <div className="w-full h-[400px] bg-gray-200  flex items-center justify-center">
             <p className="text-gray-600">Featured video player placeholder</p>
           </div>
         </div>
