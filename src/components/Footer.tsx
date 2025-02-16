@@ -12,7 +12,7 @@ const Footer = () => {
             <p className="text-gray-400">
               123 Charity Street<br />
               New York, NY 10001<br />
-              Email: info@orphanlife.org<br />
+              Email: info@orphanlife.com<br />
               Phone: (555) 123-4567
             </p>
           </div>
