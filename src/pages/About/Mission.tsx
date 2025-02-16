@@ -18,7 +18,7 @@ const Mission = () => {
           <img
             src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
             alt="Children playing"
-            className="w-full h-96 object-cover rounded-lg shadow-lg"
+            className="w-full h-96 object-cover  shadow-lg"
           />
         </div>
       </div>
