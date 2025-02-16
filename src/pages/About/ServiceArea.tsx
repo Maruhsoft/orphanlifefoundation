@@ -26,12 +26,12 @@ const ServiceArea = () => {
           <img
             src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
             alt="Children in a classroom"
-            className="w-full h-96 object-cover rounded-lg shadow-lg"
+            className="w-full h-96 object-cover  shadow-lg"
           />
         </div>
       </div>
 
-      <div className="bg-gray-50 p-8 rounded-lg shadow-md">
+      <div className="bg-gray-50 p-8  shadow-md">
         <h2 className="text-2xl font-semibold text-gray-900 mb-4">Impact Statistics</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="text-center">
