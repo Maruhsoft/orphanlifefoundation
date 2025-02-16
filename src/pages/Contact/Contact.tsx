@@ -134,9 +134,12 @@ const Contact = () => {
               <div>
                 <h3 className="font-medium text-gray-900">Address</h3>
                 <p className="text-gray-600">
-                  123 Charity Street<br />
-                  New York, NY 10001<br />
-                  United States
+                  Orphan Life Foundation<br />
+                  8 The Green<br />
+                  Suite # 7165<br />
+                  Dover, DE 199010795098509<br />
+                  +1-360-704-9400<br />
+                  info@orphanlifefoundation.org
                 </p>
               </div>
             </div>
