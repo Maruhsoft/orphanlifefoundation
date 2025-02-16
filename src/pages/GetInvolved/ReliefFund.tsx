@@ -11,7 +11,7 @@ const ReliefFund = () => {
           <p className="text-gray-600 mb-6">
             The Global Pandemic Relief Fund provides critical support to orphaned children and their caregivers during health crises. We ensure continued access to essential services, healthcare, and education during challenging times.
           </p>
-          <div className="bg-orange-50 p-6 rounded-lg">
+          <div className="bg-orange-50 p-6 ">
             <h3 className="text-xl font-semibold text-gray-900 mb-3">Fund Priorities</h3>
             <ul className="space-y-2 text-gray-600">
               <li>• Emergency Medical Care</li>
@@ -26,25 +26,25 @@ const ReliefFund = () => {
           <img
             src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
             alt="Relief support"
-            className="w-full h-96 object-cover rounded-lg shadow-lg"
+            className="w-full h-96 object-cover  shadow-lg"
           />
         </div>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-        <div className="bg-white p-6 rounded-lg shadow-md">
+        <div className="bg-white p-6  shadow-md">
           <h3 className="text-xl font-semibold text-gray-900 mb-4">Healthcare Support</h3>
           <p className="text-gray-600">
             Providing medical care, medications, and preventive measures to protect vulnerable children.
           </p>
         </div>
-        <div className="bg-white p-6 rounded-lg shadow-md">
+        <div className="bg-white p-6  shadow-md">
           <h3 className="text-xl font-semibold text-gray-900 mb-4">Educational Continuity</h3>
           <p className="text-gray-600">
             Ensuring children can continue their education through remote learning resources.
           </p>
         </div>
-        <div className="bg-white p-6 rounded-lg shadow-md">
+        <div className="bg-white p-6  shadow-md">
           <h3 className="text-xl font-semibold text-gray-900 mb-4">Basic Necessities</h3>
           <p className="text-gray-600">
             Supplying food, hygiene products, and other essential items during crises.
@@ -52,7 +52,7 @@ const ReliefFund = () => {
         </div>
       </div>
 
-      <div className="bg-gray-50 p-8 rounded-lg">
+      <div className="bg-gray-50 p-8 ">
         <h2 className="text-2xl font-semibold text-gray-900 mb-6">Support the Relief Fund</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
@@ -64,7 +64,7 @@ const ReliefFund = () => {
               href="https://www.paypal.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block px-6 py-3 bg-orange-500 text-white font-medium rounded-md hover:bg-orange-600"
+              className="inline-block px-6 py-3 bg-orange-500 text-white font-medium  hover:bg-orange-600"
             >
               Donate Now
             </a>
@@ -76,7 +76,7 @@ const ReliefFund = () => {
             </p>
             <a
               href="/contact"
-              className="inline-block px-6 py-3 bg-orange-500 text-white font-medium rounded-md hover:bg-orange-600"
+              className="inline-block px-6 py-3 bg-orange-500 text-white font-medium  hover:bg-orange-600"
             >
               Contact Us
             </a>
