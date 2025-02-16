@@ -72,7 +72,7 @@ const Contact = () => {
                 value={formData.name}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"
+                className="w-full px-4 py-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500"
               />
             </div>
             <div>
@@ -86,7 +86,7 @@ const Contact = () => {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"
+                className="w-full px-4 py-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500"
               />
             </div>
             <div>
@@ -100,7 +100,7 @@ const Contact = () => {
                 value={formData.subject}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"
+                className="w-full px-4 py-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500"
               />
             </div>
             <div>
@@ -114,13 +114,13 @@ const Contact = () => {
                 onChange={handleChange}
                 required
                 rows={6}
-                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"
+                className="w-full px-4 py-2 border border-gray-300  focus:outline-none focus:ring-2 focus:ring-orange-500"
               ></textarea>
             </div>
             <button
               type="submit"
               disabled={isSubmitting}
-              className="w-full px-6 py-3 bg-orange-500 text-white font-medium rounded-md hover:bg-orange-600 disabled:bg-orange-300 disabled:cursor-not-allowed transition-colors"
+              className="w-full px-6 py-3 bg-orange-500 text-white font-medium  hover:bg-orange-600 disabled:bg-orange-300 disabled:cursor-not-allowed transition-colors"
             >
               {isSubmitting ? 'Sending...' : 'Send Message'}
             </button>
@@ -138,8 +138,6 @@ const Contact = () => {
                   8 The Green<br />
                   Suite # 7165<br />
                   Dover, DE 199010795098509<br />
-                  +1-360-704-9400<br />
-                  info@orphanlifefoundation.org
                 </p>
               </div>
             </div>
@@ -147,14 +145,14 @@ const Contact = () => {
               <Phone className="w-6 h-6 text-orange-500 flex-shrink-0" />
               <div>
                 <h3 className="font-medium text-gray-900">Phone</h3>
-                <p className="text-gray-600">(555) 123-4567</p>
+                <p className="text-gray-600">+1-360-704-9400</p>
               </div>
             </div>
             <div className="flex items-start space-x-4">
               <Mail className="w-6 h-6 text-orange-500 flex-shrink-0" />
               <div>
                 <h3 className="font-medium text-gray-900">Email</h3>
-                <p className="text-gray-600">info@orphanlife.org</p>
+                <p className="text-gray-600">info@orphanlifefoundation.org</p>
               </div>
             </div>
           </div>
@@ -173,7 +171,7 @@ const Contact = () => {
             <p className="text-gray-600">
               For urgent matters outside of office hours, please call our 24/7 emergency hotline:
               <br />
-              <span className="font-medium">(555) 999-8888</span>
+              <span className="font-medium">+1-360-704-9400</span>
             </p>
           </div>
         </div>
