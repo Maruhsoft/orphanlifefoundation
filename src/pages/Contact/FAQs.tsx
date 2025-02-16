@@ -33,7 +33,7 @@ const FAQs = () => {
           <h2 className="text-2xl font-semibold text-gray-900 mb-6">Common Questions</h2>
           <div className="space-y-6">
             {faqs.map((faq, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-md">
+              <div key={index} className="bg-white p-6  shadow-md">
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">{faq.question}</h3>
                 <p className="text-gray-600">{faq.answer}</p>
               </div>
@@ -42,7 +42,7 @@ const FAQs = () => {
         </div>
         <div>
           <h2 className="text-2xl font-semibold text-gray-900 mb-6">Still Have Questions?</h2>
-          <div className="bg-orange-50 p-6 rounded-lg mb-8">
+          <div className="bg-orange-50 p-6  mb-8">
             <h3 className="text-xl font-semibold text-gray-900 mb-4">Contact Us</h3>
             <p className="text-gray-600 mb-6">
                Continuing with the FAQs.tsx file content:
@@ -65,7 +65,7 @@ const FAQs = () => {
             </div>
           </div>
           
-          <div className="bg-white p-6 rounded-lg shadow-md">
+          <div className="bg-white p-6  shadow-md">
             <h3 className="text-xl font-semibold text-gray-900 mb-4">Resources</h3>
             <ul className="space-y-4">
               <li>
