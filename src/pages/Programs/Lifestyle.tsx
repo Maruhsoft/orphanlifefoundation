@@ -11,7 +11,7 @@ const Lifestyle = () => {
           <p className="text-gray-600 mb-6">
             Our lifestyle programs focus on developing essential life skills, social competencies, and personal development for orphaned children. We aim to prepare them for independent, successful lives.
           </p>
-          <div className="bg-orange-50 p-6 rounded-lg">
+          <div className="bg-orange-50 p-6 ">
             <h3 className="text-xl font-semibold text-gray-900 mb-3">Program Components</h3>
             <ul className="space-y-2 text-gray-600">
               <li>• Personal Development Workshops</li>
@@ -26,25 +26,25 @@ const Lifestyle = () => {
           <img
             src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
             alt="Children in activities"
-            className="w-full h-96 object-cover rounded-lg shadow-lg"
+            className="w-full h-96 object-cover  shadow-lg"
           />
         </div>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-        <div className="bg-white p-6 rounded-lg shadow-md">
+        <div className="bg-white p-6  shadow-md">
           <h3 className="text-xl font-semibold text-gray-900 mb-4">Life Skills Training</h3>
           <p className="text-gray-600">
             Teaching practical skills like cooking, budgeting, and personal care for independent living.
           </p>
         </div>
-        <div className="bg-white p-6 rounded-lg shadow-md">
+        <div className="bg-white p-6  shadow-md">
           <h3 className="text-xl font-semibold text-gray-900 mb-4">Social Development</h3>
           <p className="text-gray-600">
             Building communication skills, emotional intelligence, and healthy relationships.
           </p>
         </div>
-        <div className="bg-white p-6 rounded-lg shadow-md">
+        <div className="bg-white p-6  shadow-md">
           <h3 className="text-xl font-semibold text-gray-900 mb-4">Creative Expression</h3>
           <p className="text-gray-600">
             Encouraging artistic expression through music, art, dance, and other creative activities.
@@ -52,7 +52,7 @@ const Lifestyle = () => {
         </div>
       </div>
 
-      <div className="bg-gray-50 p-8 rounded-lg">
+      <div className="bg-gray-50 p-8 ">
         <h2 className="text-2xl font-semibold text-gray-900 mb-6">Get Involved</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
@@ -64,7 +64,7 @@ const Lifestyle = () => {
               href="https://www.paypal.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block px-6 py-3 bg-orange-500 text-white font-medium rounded-md hover:bg-orange-600"
+              className="inline-block px-6 py-3 bg-orange-500 text-white font-medium  hover:bg-orange-600"
             >
               Donate Now
             </a>
@@ -76,7 +76,7 @@ const Lifestyle = () => {
             </p>
             <a
               href="/get-involved/volunteer"
-              className="inline-block px-6 py-3 bg-orange-500 text-white font-medium rounded-md hover:bg-orange-600"
+              className="inline-block px-6 py-3 bg-orange-500 text-white font-medium  hover:bg-orange-600"
             >
               Volunteer
             </a>
