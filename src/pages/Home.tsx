@@ -76,6 +76,33 @@ const Home = () => {
         </div>
       </section>
 
+     {/* Daily Impact Section */}
+      <section className="py-16 bg-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center">
+          {/* Image on the left */}
+          <div className="md:w-1/2">
+            <img 
+        src="https://source.unsplash.com/600x400/?orphanage,children" 
+        alt="Orphanage" 
+        className="w-full h-auto rounded-lg shadow-md"
+      />
+          </div>
+          
+          {/* Text and Button on the right */}
+          <div className="md:w-1/2 text-center md:text-left mt-6 md:mt-0 md:pl-10">
+            <h2 className="text-3xl font-bold text-gray-900">
+              Dedicated to looking after the welfare of orphan children
+            </h2>
+            <Link
+        to="/about/mission"
+        className="mt-6 inline-block px-6 py-3 bg-orange-500 text-white font-medium rounded-md hover:bg-orange-600"
+      >
+              Our Mission
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Featured Video */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
